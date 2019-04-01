@@ -1,0 +1,12 @@
+<h1>
+	Home Page
+</h1>
+<div>
+	{% for post in all_posts %}
+		<h3>{{ post.Post_Name }}</h3>
+		<div>
+			<img src="{{ post.Post_Image.url }}" width="50%" height="50%">
+		</div>
+		
+	{% endfor %}
+</div>
